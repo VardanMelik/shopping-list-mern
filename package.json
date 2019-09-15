@@ -1,0 +1,29 @@
+{
+    "name": "mern-shoppint-list",
+    "version": "1.0.0",
+    "description": "Shopping List",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "server": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VardanMelik/shopping-list-mern.git"
+    },
+    "author": "EyeMotiom, Global Gaming",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/VardanMelik/shopping-list-mern/issues"
+    },
+    "homepage": "https://github.com/VardanMelik/shopping-list-mern#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "concurrently": "^4.1.2",
+        "express": "^4.17.1",
+        "mongoose": "^5.7.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.2"
+    }
+}
