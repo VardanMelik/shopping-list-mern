@@ -9,9 +9,11 @@ const Item = require('../../modules/Item')
 // @access Public 
 
 router.get('/', (req, res) => {
+    console.log('Get Post is working')
     Item.find()
         .sort({ date: -1 })
         .then(items => res.json(items))
+
 })
 
 // @route POST api/items
@@ -19,10 +21,15 @@ router.get('/', (req, res) => {
 // @access Public 
 
 router.post('/', (req, res) => {
-    let newItem = new Item({
+    console.log('Posting Test')
+
+    const newItem = new Item({
         name: req.body.name
     })
-    newItem.save().then(item => res, json(item))
+
+    newItem.save()
+        .then(item => res, json(item))
+        .catch(err => console.log(err))
 })
 
 
